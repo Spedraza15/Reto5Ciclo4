@@ -17,9 +17,10 @@ public class Product {
     private String category;
     private String name;
     private String description;
-    private boolean availability;
     private double price;
+    private boolean availability;
     private Integer quantity;
     private String photography;
 
 }
+
