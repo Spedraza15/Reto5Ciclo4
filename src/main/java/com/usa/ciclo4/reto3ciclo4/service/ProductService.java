@@ -35,21 +35,6 @@ public class ProductService {
                 if (product.getBrand()!= null){
                     dbProduct.get().setBrand(product.getBrand());
                 }
-                if (product.getProcesor()!= null){
-                    dbProduct.get().setProcesor(product.getProcesor());
-                }
-                if (product.getOs()!= null){
-                    dbProduct.get().setOs(product.getOs());
-                }
-                if (product.getDescription() != null){
-                    dbProduct.get().setDescription(product.getDescription());
-                }
-                if (product.getMemory()!= null){
-                    dbProduct.get().setMemory(product.getMemory());
-                }
-                if (product.getHardDrive()!= null){
-                    dbProduct.get().setHardDrive(product.getHardDrive());
-                }
 
                 dbProduct.get().setAvailability(product.isAvailability());
 

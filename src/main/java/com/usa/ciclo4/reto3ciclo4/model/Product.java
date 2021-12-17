@@ -14,11 +14,9 @@ public class Product {
     @Id
     private Integer id;
     private String brand;
-    private String procesor;
-    private String os;
+    private String category;
+    private String name;
     private String description;
-    private String memory;
-    private String hardDrive;
     private boolean availability;
     private double price;
     private Integer quantity;
