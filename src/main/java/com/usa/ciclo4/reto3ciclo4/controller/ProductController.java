@@ -43,4 +43,14 @@ public class ProductController {
     public boolean delete(@PathVariable("id") int id){
         return productService.delete(id);
     }
+
+    @GetMapping("/price/{price}")
+    public List<Product> findByPrice(@PathVariable("price")double price){
+        return productService.getByPrice(price);
+    }
+
+    @GetMapping("/description/{description}")
+    public List<Product> getByDescriptionContains(@PathVariable("description") String description){
+        return productService.getByDescriptionContains(description);
+    }
 }

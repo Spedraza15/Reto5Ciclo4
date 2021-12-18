@@ -1,6 +1,7 @@
 package com.usa.ciclo4.reto3ciclo4.controller;
 
 import com.usa.ciclo4.reto3ciclo4.model.User;
+import com.usa.ciclo4.reto3ciclo4.repository.UserRepository;
 import com.usa.ciclo4.reto3ciclo4.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -92,5 +93,10 @@ public class UserController {
     @GetMapping("/emailexist/{email}")
     public boolean emailExists (@PathVariable("email") String email){
         return userService.emailExists(email);
+    }
+
+    @GetMapping("/birthday/{month}")
+    public List<User> getByMonthBirthDay(@PathVariable("month") String month) {
+        return userService.getByMonthBirthDay(month);
     }
 }
